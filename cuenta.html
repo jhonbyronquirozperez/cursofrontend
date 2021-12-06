@@ -50,28 +50,21 @@
            font-weight: bold;
            margin-bottom: 4px;
        }
-       .input{
-           background-color: #E3E3E3;
-           border: none;
-           border-radius: 8px;
-           height: 30px;
+       .value{
+           color: var(--very-light-pink);
            font-size: var(--md);
-           padding: 8px;
-           margin-bottom: 12px;
+           margin: 8px 0px 32px 0px;
        }
-       .input-name,.input-email,.input-password{
-           margin-bottom: 22px;
-
-       }
+       
        .form{
            display: flex;
            flex-direction: column;
        }
-       .primary-button{
-           background-color: var(--hospital-green);
+       .secondary-button{
+           background-color: var(--white);
            border-radius: 8px;
-           border: none;
-           color: var(--white);
+           border: 1px solid var(--hospital-green);
+           color: var(--hospital-green);
            width: 100%;
            cursor: pointer;
            font-size: var(--md);
@@ -102,19 +95,19 @@
             
             <form action="/" class="form">
                 <label for="name" class="label">Name</label>
-                <input type="text" id="name" placeholder="Pepito Perez" class="input input-name">
+               <p class="value">pedrito perez</p>
 
                 <label for="email" class="label">Email</label>
-                <input type="email" id="email" placeholder="Pepitoperez@ejemplo.com" class="input input-email">
+                <p class="value">predritoperez@ejemplo.com</p>
 
                 <label for="password" class="label">Password</label>
-                <input type="password" id="password" placeholder="************" class="input input-password">
+                <p class="value">***********</p>
                 
 
                 
             </form>
 
-            <input type="submit" value="Create" class="primary-button login-button">
+            <input type="submit" value="Edit" class="secondary-button login-button">
         </div>
     </div>
 </body>
